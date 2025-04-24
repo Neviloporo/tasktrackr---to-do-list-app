@@ -12,7 +12,7 @@ const TaskList = ({ tasks, deleteTask, editTask }) => {
             <tr>
               <th>Task</th>
               <th>Due Date</th>
-              <th>Actions</th>
+              <th>Task part</th>
             </tr>
           </thead>
           <tbody>

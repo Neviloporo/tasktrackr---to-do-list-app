@@ -26,8 +26,8 @@ const TaskItem = ({ task, deleteTask, editTask }) => {
       </td>
       <td>{task.dueDate || 'No Due Date'}</td>
       <td className="task-buttons">
-        <button onClick={handleEdit}>{isEditing ? 'Save' : 'Edit'}</button>
-        <button onClick={() => deleteTask(task.id)}>Delete</button>
+        <button className='edit' onClick={handleEdit}>{isEditing ? 'Save' : 'Edit'}</button>
+        <button className='delete' onClick={() => deleteTask(task.id)}>Delete</button>
       </td>
     </tr>
   );
